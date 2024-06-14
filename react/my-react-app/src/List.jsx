@@ -7,7 +7,7 @@ function List() {
         {id: 3, name: "banana", calories: 105}, 
         {id: 4, name: "coconut", calories: 159}, 
         {id: 5, name: "pineapple", calories: 37}
-    ];
+    ]; 
 
     fruits.sort((a, b) => a.name.localeCompare(b.name));
     // fruits.sort((a, b) => b.name.localeCompare(a.name));
