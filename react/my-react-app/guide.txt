@@ -1,0 +1,11 @@
+.prettier
+    Trailing-commas
+        : 배열, 오브젝트 프로퍼티 등 콤마를 이용한 항목의 나열에서 마지막 항목에도 콤마를 붙이는 코딩 방식
+        : trailing-commas를 사용하지 않은 코드라면 2줄의 코드에 변화가 있을 것이고, 
+        : trailing-commas를 사용한다면 한줄의 코드 변화만 있을 것이다.
+        
+React Grammar
+    A component is changing an uncontrolled input to be controlled. 
+    This is likely caused by the value changing from undefined to a defined value,
+        : <input value={quantity} /> 
+        : <input value={quantity || 0} /> or useState(0)
