@@ -27,7 +27,7 @@ function ToDoList(props) {
         }
     }
 
-    function moveTaskUp(index) {
+    function moveTaskDown(index) {
 
     }
 
@@ -46,6 +46,28 @@ function ToDoList(props) {
                     Add
                 </button>
             </div>
+
+            <ol>
+                {tasks.map((task, index) => 
+                    <li key={index}>
+                        <span className="text">{task}</span>
+                        <button className="delete-button"
+                        onClick={() => deleteTask(index)}>
+                            Delete 
+                        </button>
+                        <button
+                            className="move-button"
+                            onClick={() => moveTaskUp(index)}>
+                                👆
+                        </button>
+                        <button
+                            className="move-button"
+                            onClick={() => moveTaskDown(index)}>
+                                👇
+                        </button>
+                    </li>
+                )}
+            </ol>
             
         </div>
     );
