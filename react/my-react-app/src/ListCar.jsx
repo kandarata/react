@@ -42,15 +42,17 @@ function ListCar(props) {
             <p>List of Car Objects</p>
             <ul>
                 {cars.map((car, index) => 
-                    <li key={index} onClick={() => handleRemoveCar()}>{car}</li>
+                    <li key={index} onClick={() => handleRemoveCar(index)}>{car.year} {car.make} {car.model}</li>
                 )}
             </ul>
             <input type="number" value={carYear} onChange={handleYearChange} />
-            <input type="text" onChange={handleMakeChange} />
-            <input type="text" onChange={handleModelChange} />
+            <input type="text" value={carMake} onChange={handleMakeChange} 
+            placeholder="Enter car make" />
+            <input type="text" value={carModel} onChange={handleModelChange} 
+            placeholder="Enter car model" />
             <button onClick={handleAddCar} >Add Car</button>
         </div>
     );
-}
+} 
 
 export default ListCar;

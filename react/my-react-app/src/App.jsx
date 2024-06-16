@@ -16,6 +16,7 @@ import ColorPicker from './ColorPicker.jsx'
 import FavoriteCar from './FavoriteCar.jsx'
 import ListFood from './ListFood.jsx'
 import ListCar from './ListCar.jsx'
+import ToDoList from './ToDoList.jsx'
 
 function App() {
 
@@ -39,6 +40,7 @@ function App() {
         <>
             <Header/>
 
+            <ToDoList />
             <ListCar />
             <ListFood />
             <FavoriteCar />
